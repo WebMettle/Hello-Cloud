@@ -14,6 +14,5 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-      - name: Run Python Tests
-      	  run: ant -buildfile python/build.xml
+      - run: ant -buildfile python/build.xml
       - run: echo "   Job ending with ${{ job.status }}..."
