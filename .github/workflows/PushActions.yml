@@ -10,6 +10,5 @@ jobs:
         run: |
           ls -F ${{ github.workspace }}
       - name: Run Python Tests
-      	run: |
-	  ant -buildfile python/build.xml
+      	run: ant -buildfile python/build.xml
       - run: echo "   Job ending with ${{ job.status }}..."
