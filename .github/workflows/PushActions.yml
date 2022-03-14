@@ -7,9 +7,4 @@ jobs:
       - run: echo "${{ github.event_name }} event at ${{ }} for ${{ github.repository }} running on ${{ runner.os }}..."
       - run: echo "checking out repo..."
         uses: actions/checkout@v2
-      - name: List files in the repository
-        run: |
-          ls -F ${{ github.workspace }}
-#      - name: Build with Ant
-#           run: ant -noinput -buildfile python/build.xml
       - run: echo "   Job ending with ${{ job.status }}..."
