@@ -10,8 +10,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
-      - name: Print Versions
+      - name: Print Path
         run: echo $PATH
+
+      - name: Find Pathnames
+        run: which python
 
       - name: Closing
         run: echo "   Job ending with ${{ job.status }}..."
