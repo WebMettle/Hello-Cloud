@@ -16,5 +16,8 @@ jobs:
       - name: Find Pathnames
         run: which python
 
+      - name: Print Python Version
+        run: python --version
+
       - name: Closing
         run: echo "   Job ending with ${{ job.status }}..."
