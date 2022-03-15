@@ -11,10 +11,11 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Print Versions
-        run: python --version
-	run: ant -version
-	run: java -version
-	run: ls -F /usr/bin
+        run: |
+	  python --version
+	  ant -version
+	  java -version
+	  ls -F /usr/bin
 
       - name: Closing
         run: echo "   Job ending with ${{ job.status }}..."
