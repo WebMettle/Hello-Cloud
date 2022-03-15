@@ -13,20 +13,20 @@ jobs:
       - name: Print Path
         run: echo $PATH
 
-      - name: Find Python Pathname
-        run: which python
-
-      - name: Print Python Version
-        run: python --version
-
-      - name: Find Java Pathname
-        run: which java
-
-      - name: Print Java Version
-        run: java -version
-      - name: Print Pathnames
+      - name: Print Python pathname and version
         run: |
           which python
+          python --version
+
+      - name: Print Java pathname and version
+        run: |
           which java
+          java -version
+
+      - name: Print Ant pathname and version
+        run: |
+          which ant
+          ant -version
+
       - name: Closing
         run: echo "   Job ending with ${{ job.status }}..."
