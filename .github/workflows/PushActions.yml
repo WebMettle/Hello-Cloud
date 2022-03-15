@@ -27,7 +27,5 @@ jobs:
       - name: Print Pathnames
         run: |
 	  which python
-	  which java
-
       - name: Closing
         run: echo "   Job ending with ${{ job.status }}..."
