@@ -4,7 +4,11 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ github.event_name }} event at ${{ }} for ${{ github.repository }} running on ${{ runner.os }}..."
-      - run: echo "checking out repo..."
+      - name: Greeting
+        run: echo "${{ github.event_name }} event at ${{ }} for ${{ github.repository }} running on ${{ runner.os }}..."
+
+      - name: Checkout repo
         uses: actions/checkout@v2
-      - run: echo "   Job ending with ${{ job.status }}..."
+
+      - name: Closing
+        run: echo "   Job ending with ${{ job.status }}..."
