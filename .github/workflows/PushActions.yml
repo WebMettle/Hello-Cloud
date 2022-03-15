@@ -20,5 +20,8 @@ jobs:
           which ant
           ant -version
 
+      - name: Run Python tests
+        run: ant -buildfile python/build.xml test
+
       - name: Closing
         run: echo "   Job ending with ${{ job.status }}..."
