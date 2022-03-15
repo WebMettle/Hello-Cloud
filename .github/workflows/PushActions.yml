@@ -10,21 +10,13 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
-      - name: Print Path
-        run: echo $PATH
-
-      - name: Print Python pathname and version
+      - name: Print PATH, pathnames and versions
         run: |
+          echo $PATH
           which python
           python --version
-
-      - name: Print Java pathname and version
-        run: |
           which java
           java -version
-
-      - name: Print Ant pathname and version
-        run: |
           which ant
           ant -version
 
