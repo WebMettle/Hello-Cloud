@@ -5,12 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Greeting
-        run: echo "${{ github.event_name }} event at add-datetime-here for ${{ github.repository }} running on ${{ runner.os }}..."
+        run: echo "${{ github.event_name }} event for ${{ github.repository }} running on ${{ runner.os }}..."
 
       - name: Checkout repo
         uses: actions/checkout@v2
 
-      - name: Print PATH, pathnames and versions
+      - name: Print PATH, pathnames, and versions
         run: |
           echo $PATH
           which python
@@ -24,4 +24,4 @@ jobs:
         run: ant -buildfile python/build.xml test
 
       - name: Closing
-        run: echo "   Job ending with ${{ job.status }}..."
+        run: echo "${{ github.event_name }} event job ending with ${{ job.status }}..."
