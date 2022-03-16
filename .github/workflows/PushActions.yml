@@ -7,9 +7,6 @@ jobs:
       - name: Greeting
         run: echo "${{ github.event_name }} event job starting on ${{ runner.os }} for ${{ github.repository }}..."
 
-      - name: Checkout repo
-        uses: actions/checkout@v2
-
       - name: Print PATH, pathnames, and versions
         run: |
           echo $PATH
@@ -19,6 +16,9 @@ jobs:
           java -version
           which ant
           ant -version
+
+      - name: Checkout repo
+        uses: actions/checkout@v2
 
       - name: Run Python tests
         run: ant -buildfile python/build.xml test
