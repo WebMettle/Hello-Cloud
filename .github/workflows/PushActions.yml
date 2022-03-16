@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Greeting
-        run: echo "${{ github.event_name }} event for ${{ github.repository }} running on ${{ runner.os }}..."
+        run: echo "${{ github.event_name }} event job starting for ${{ github.repository }} running on ${{ runner.os }}..."
 
       - name: Checkout repo
         uses: actions/checkout@v2
