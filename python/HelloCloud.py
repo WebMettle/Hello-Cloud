@@ -35,3 +35,8 @@ class HelloCloud(object):
     @property
     def greetingEllipsis(self):
         return self._greetingText + '...'
+    
+if __name__ == '__main__':
+    print(HelloCloud().greetingEllipsis)
+    print(HelloCloud().greetingQuestion)
+    print(HelloCloud().greeting)
