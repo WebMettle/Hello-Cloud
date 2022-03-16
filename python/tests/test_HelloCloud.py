@@ -8,25 +8,25 @@ import HelloCloud
 class HelloCloudTest(unittest.TestCase):
 
     def test_whenInstantiated_whoIsTheCloud(self):
-        hw = HelloCloud.HelloCloud()
-        self.assertEqual(hw.who, "Cloud")
+        hc = HelloCloud.HelloCloud()
+        self.assertEqual(hc.who, "Cloud")
 
     def test_whenInstantiated_greetingHasExclaimationReaction(self):
-        hw = HelloCloud.HelloCloud()
-        self.assertTrue(hw.greeting.startswith('Hello'))
-        self.assertTrue(hw.greeting.endswith('!'))
+        hc = HelloCloud.HelloCloud()
+        self.assertTrue(hc.greeting.startswith('Hello'))
+        self.assertTrue(hc.greeting.endswith('!'))
 
     def test_when_instantiatedWithName_greetingUsesTheName(self):
-        hw = HelloCloud.HelloCloud('New York')
-        self.assertTrue(hw.greeting.endswith('New York!'))
+        hc = HelloCloud.HelloCloud('New York')
+        self.assertTrue(hc.greeting.endswith('New York!'))
 
     def test_whenGreetingQuestion_greetingHasQuestionReaction(self):
-        hw = HelloCloud.HelloCloud()
-        self.assertTrue(hw.greetingQuestion.endswith('?'))
+        hc = HelloCloud.HelloCloud()
+        self.assertTrue(hc.greetingQuestion.endswith('?'))
 
     def test_whenGreetingEllipsis_greetingHasEllipsisReaction(self):
-        hw = HelloCloud.HelloCloud()
-        self.assertTrue(hw.greetingEllipsis.endswith('...'))
+        hc = HelloCloud.HelloCloud()
+        self.assertTrue(hc.greetingEllipsis.endswith('...'))
 
 if __name__ == '__main__':
     unittest.main()
