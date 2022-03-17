@@ -20,6 +20,11 @@ Copyright (c) 2022 by WebMettle Systems
       <arg value="discover"/>
       <arg value="-v"/>
     </exec>
+
+    <exec executable="bash" outputproperty="hcCommandOutput" failonerror="true">
+      <arg value="-c"/>
+      <arg value="./helloCloud.sh | grep -sc '^Hello Cloud'"/>
+    </exec>
   </target>
 
 </project>
