@@ -21,6 +21,7 @@ Copyright (c) 2022 by WebMettle Systems
       <arg value="-v"/>
     </exec>
 
+    <echo message="testing helloCloud.sh..."/>
     <exec executable="bash" outputproperty="hcCommandOutput" failonerror="true">
       <arg value="-c"/>
       <arg value="./helloCloud.sh | grep -sc '^Hello Cloud'"/>
