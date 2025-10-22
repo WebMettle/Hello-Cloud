@@ -1,0 +1,24 @@
+{
+  "name": "hello-cloud",
+  "version": "1.0.0",
+  "description": "Hello Cloud project with an HTMX front-end.",
+  "homepage": "https://github.com/WebMettle/Hello-Cloud#readme",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebMettle/Hello-Cloud.git"
+  },
+  "keywords": [],
+  "author": "WebMettle Systems",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebMettle/Hello-Cloud/issues"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
