@@ -5,4 +5,4 @@
 
 export PYTHONPATH="`dirname $0`:${PYTHONPATH}"
 
-python -B -m HelloCloud
+python3 -B -m HelloCloud
