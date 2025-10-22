@@ -26,7 +26,7 @@ class HelloCloud(object):
 
     @property
     def greeting(self):
-        return self._greetingText + '!'
+        return self._greetingText + '.'
 
     @property
     def greetingQuestion(self):
@@ -35,8 +35,13 @@ class HelloCloud(object):
     @property
     def greetingEllipsis(self):
         return self._greetingText + '...'
+
+    @property
+    def greetingExclaimation(self):
+        return self._greetingText + '!'
     
 if __name__ == '__main__':
-    print(HelloCloud().greetingEllipsis)
     print(HelloCloud().greetingQuestion)
+    print(HelloCloud().greetingEllipsis)
     print(HelloCloud().greeting)
+    print(HelloCloud().greetingExclaimation)
