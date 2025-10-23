@@ -6,6 +6,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+     "t:HelloDate": "node --test javascript/HelloDate.test.js",
      "devServer": "npx nodemon",
      "devSync": "npx browser-sync start --proxy 'http://localhost:3000' --files 'app.js, views/*.js, public/*.css'"
   },
