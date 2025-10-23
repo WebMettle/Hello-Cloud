@@ -17,9 +17,8 @@ const createHomepageTemplate = () => `
             <h1>Hello Cloud Project</h1>
          </header>
          <main>
-            <div>
-               <h2>What do you want to run?</h2>
-            </div>
+            <button hx-get = "/when"  hx-swap = "innterHTML" hx-target = ".when-output"><b>Show When</b></button><br><br>
+            <div class = "when-output"><i>Click the button to get a result from the /when API.</i></div>
          </main>
       </body>
    </html>
