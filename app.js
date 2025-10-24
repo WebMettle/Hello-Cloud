@@ -3,7 +3,7 @@
 //
 
 import express from 'express';
-import createHomepageTemplage from './views/index.js';
+import createHomepageTemplate from './views/index.js';
 import getWhen from './views/when.js';
 
 const app = express();
@@ -15,7 +15,7 @@ app.use(express.static('public'));
 //
 
 app.get('/', (req, res) => {
-   res.send(createHomepageTemplage());
+   res.send(createHomepageTemplate());
 });
 
 app.get('/when', (req, res) => {
