@@ -6,10 +6,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-     "test": "node --test",
-     "t:HelloDate": "node --test javascript/HelloDate.test.js",
-     "devServer": "npx nodemon",
-     "devSync": "npx browser-sync start --proxy 'http://localhost:3000' --files 'app.js, views/*.js, public/*.css'"
+    "test": "node --test",
+    "t:HelloDate": "node --test javascript/HelloDate.test.js",
+    "devServer": "node --watch-preserve-output --watch-path=./javascript --watch-path=./views --watch-path=./public app.js",
+    "devSync": "npx browser-sync start --proxy 'http://localhost:3000' --files 'app.js, javascript/*.js, views/*.js, public/*.css'"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,6 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "browser-sync": "^3.0.4",
-    "nodemon": "^3.1.10"
+    "browser-sync": "^3.0.4"
   }
 }
