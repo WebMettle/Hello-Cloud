@@ -22,6 +22,8 @@ app.get('/when', (req, res) => {
    res.send(getWhen());
 });
 
-app.listen(3000, () => {
-   console.log('App running on port 3000...');
+const listenPort = process.env.HelloCloudListenPort || 3000
+
+app.listen(listenPort, () => {
+   console.log('App running on port ' + listenPort + '...');
 });
