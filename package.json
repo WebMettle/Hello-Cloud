@@ -7,8 +7,8 @@
   "type": "module",
   "scripts": {
     "testJS": "node --test",
-    "testPY": "python3 -B -m unittest discover -v python/",
     "t:HelloDate": "node --test javascript/HelloDate.test.js",
+    "testPY": "python3 -B -m unittest discover -v python/",
     "devServer": "HelloCloudListenPort=3100 node --watch-preserve-output --watch-path=./javascript --watch-path=./views --watch-path=./public app.js",
     "devSync": "npx browser-sync start --proxy 'http://localhost:3100' --port 3101 --ui-port 3110 --files 'app.js, javascript/*.js, views/*.js, public/*.css'",
     "prodStart": "HelloCloudListenPort=3100 node app.js"
